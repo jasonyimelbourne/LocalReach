@@ -34,7 +34,7 @@
             border-bottom: 1px solid #eaeaea;
             background-color: #ffffff;
         }
-        /* 로고 크기를 넉넉하게 키웠습니다 (기존 180px -> 300px) */
+        /* 로고 크기 설정 */
         header img.logo {
             width: 100%;
             max-width: 300px;
@@ -200,7 +200,7 @@
 <body>
 
     <div class="container">
-        <!-- 상단 헤더 (로고 크기 확대) -->
+        <!-- 상단 헤더 (로고) -->
         <header>
             <img src="Local Reach_Logo.jpg" alt="Local Reach Logo" class="logo">
         </header>
@@ -222,4 +222,62 @@
                 <div class="product-info">
                     <h3>Letterbox Distribution - 1,000 Copies</h3>
                     <p class="desc">Targeted local letterbox distribution service for 1,000 copies of flyers and printed materials across the Wyndham region in Melbourne.</p>
-                    <a href="mailto:accounts@localreachau.com?subject=Inquiry: Wyndham 1000 Copies" class="cta-button">Get a
+                    <a href="mailto:accounts@localreachau.com?subject=Inquiry: Wyndham 1000 Copies" class="cta-button">Get a Quote</a>
+                </div>
+            </div>
+
+            <!-- 상품 2 (2000부) -->
+            <div class="product-card">
+                <img src="sub2.jpg" alt="Wyndham 2000 Copies Distribution">
+                <div class="product-info">
+                    <h3>Letterbox Distribution - 2,000 Copies</h3>
+                    <p class="desc">Expanded local letterbox distribution campaign covering 2,000 households in Wyndham to maximize your local market reach and customer engagement.</p>
+                    <a href="mailto:accounts@localreachau.com?subject=Inquiry: Wyndham 2000 Copies" class="cta-button">Get a Quote</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 하단 견적 문의 폼 섹션 (추가 완료) -->
+        <section class="quote-section">
+            <h2>Get a Free<br>Distribution Quote</h2>
+            <p>Tell us about your campaign objectives and target areas to receive a customized letterbox distribution plan and quote.</p>
+            
+            <form action="mailto:accounts@localreachau.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label>Name</label>
+                    <div class="name-row">
+                        <div class="name-field">
+                            <span>First Name (required)</span>
+                            <input type="text" name="First Name" required>
+                        </div>
+                        <div class="name-field">
+                            <span>Last Name (required)</span>
+                            <input type="text" name="Last Name" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email (required)</label>
+                    <input type="email" name="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message (required)</label>
+                    <textarea name="Message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">SEND</button>
+            </form>
+        </section>
+
+        <!-- 푸터 -->
+        <footer>
+            <p>&copy; LocalReachAU.com. All rights reserved.</p>
+            <p>Inquiries: accounts@localreachau.com</p>
+        </footer>
+    </div>
+
+</body>
+</html>
